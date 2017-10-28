@@ -7,7 +7,10 @@ Express,
 AngularJS,
 Mongodb,
 RESTFull API,
-mongoose
+mongoose,
+nodemon for api server
+webpack with hot reload
+
 
 $ npm run start    inside /TicketAPi to run API server.
 $ npm start        inside /Frontend to run app
