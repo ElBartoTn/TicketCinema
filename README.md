@@ -1,17 +1,31 @@
-# TicketCinema
+# TicketBooking app 
 
-Cinema ticket booking using :
+Building app to get to manage cinema ticket booking
 
-NodeJS,
-Express,
-AngularJS,
-Mongodb,
-RESTFull API,
-mongoose,
-nodemon for api server
-webpack with hot reload
+## Using
+
+* MongoDB
+* Angularjs
+* Nodejs
+* Express
+* nodemon
+* web
+
+## Requirements
+
+* [Node.js](http://nodejs.org/)
+
+## Installation
+
+1. Clone repo
+2. Run inside front-end folder and api folder `npm install`
+3. Run `npm run start` to start api
+4. Run `npm start` to start Angularjs app
 
 
-$ npm run start    inside /TicketAPi to run API server.
-$ npm start        inside /Frontend to run app
+
+## License
+
+The MIT License (MIT)
+
 
