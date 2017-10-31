@@ -14,6 +14,7 @@ Building app to get to manage cinema ticket booking
 ## Requirements
 
 * [Node.js](http://nodejs.org/)
+* MongoDB
 
 ## Installation
 
