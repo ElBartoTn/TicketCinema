@@ -1,0 +1,179 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="budgetApp">
+<head>
+  <!-- SCROLLS -->
+  <!-- load bootstrap and fontawesome via CDN -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="style/select.css" />
+  <link rel="stylesheet" href="style/bootstrap-datepaginator.css" />
+  
+  
+  <link rel="stylesheet" href="style/app.css" />
+  <link rel="stylesheet" href="style/FilterMenu.css" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>src="js/select.js"</script>
+  <!-- SPELLS -->
+  <!-- load angular and angular route via CDN -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.20.0/select.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
+
+<script src="//rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.js"></script>
+<link href="//rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">
+      <link rel='stylesheet' href='style/spinner.css'>
+      <script src='js/spinner.js'></script>
+      <script src="/js/bootstrap-datepaginator.js"></script>
+      <script src="/js/jquery.flexslider.js"></script>
+      <link rel='stylesheet' href='style/flexslider.css'>
+      <link rel='stylesheet' href='style/bootstrap-social.css'>
+      <script src="js/select.js"></script>
+      <link rel="stylesheet" href="style/select.css">
+      <link rel='stylesheet' href='style/component.css'>
+      <script src="/js/toucheffects.js"></script>
+      <script src="/js/bootstrap-timepicker.js"></script>
+      <link rel="stylesheet" href="style/bootstrap-timepicker.css">
+      <script src="js/angular-number-picker.min.js"></script>
+      
+      
+      
+      
+      
+      
+      
+  <script src="script.js"></script>
+<!-- jQuery library -->
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+</head>
+<body ng-controller="mainController">
+
+    <!-- HEADER AND NAVBAR -->
+    
+        <main>
+            <div class="wrapper">
+              <!--Header-->
+              <header class="header">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                  <div class="container full-width">
+                    <div class="row" >
+                      <ul class="nav navbar-nav navbar-right" >
+                        <li  ng-class="menuIndice == 1 ? 'active':''" class="dropdown">
+                          <a ng-click="menuIndice=1"  class="dropdown-toggle" data-toggle="dropdown">Administration <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                              <li><a  ng-click="menuIndice=1"  href="#Movieadmin">Film</a></li>
+                              <li><a  ng-click="menuIndice=1"  href="#SeanceAdmin">Séance</a></li>
+                              <li><a  ng-click="menuIndice=1"  href="#reservAdmin">Réservations</a></li>
+                              
+                            </ul>
+                        </li>
+                                              
+                      </ul>
+                      <ul class="nav navbar-nav navbar-left">
+                        <li  ng-class="menuIndice == 2 ? 'active':''">
+                          <a ng-click="menuIndice=2" href="#Dashboard" >Acceuil</a>
+                        </li>
+                        <li>
+                          <input type="text" id="global-search-input" class="global-search-input " placeholder="Movie name , Actor .." >
+                          
+                        </li>
+                        <li>
+                          <button  id="global-search-button" class="global-search-go">Go</a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </header>
+            </div>
+            <!-- MAIN CONTENT AND INJECTED VIEWS -->
+           <div >
+              
+                <!-- angular templating -->
+                <!-- this is where content will be injected -->
+                <div ng-view></div>
+                
+            </div>
+            </main>
+    
+            <footer>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3">
+                        Recevez toutes les actualités:
+                        <div class="input-group">
+                            <input type="text" class="global-search-input" placeholder="Email Adress">
+                            
+                            <span class="input-group-btn">
+                              <button class="btn button" type="button">S'inscrire</button>
+                            </span>
+                          </div>                   
+                         </div>
+                
+                    <div class="col-md-3 " style="margin-left:50px;">
+
+                      Suivez-nous :<br>
+                     
+                        
+                        <a class="btn btn-social-icon btn-twitter">
+                          <span class="fa fa-twitter"></span>
+                        </a>
+                        <a class="btn btn-social-icon btn-facebook">
+                            <span class="fa fa-facebook"></span>
+                          </a>
+                          <a class="btn btn-social-icon btn-youtube">
+                              <span class="fa fa-youtube"></span>
+                            </a>
+                            <a class="btn btn-social-icon btn-instagram">
+                                <span class="fa fa-instagram"></span>
+                              </a>
+                              <a class="btn btn-social-icon btn-tumblr">
+                                  <span class="fa fa-tumblr"></span>
+                                </a>
+                             
+                          
+                    </div>
+                    
+                    <div class="col-md-3 " style="margin-left:30px;">
+                        Télécharger notre application 
+                        <a  href="//play.google.com/store/apps"><img class="img-responsive" ng-src="img/play-store.png"></a>
+                      </div>
+                      
+                        
+
+
+
+
+                  </div>
+                <div class="row" style="margin-top: 10px;">
+                  <div class="col-lg-12 " style="text-align: center">
+
+                      <p style="font-size: 8px;color:#fe7900;">Copyright © 2017 FivePoints Talent Pool. All rights reserved. Your Ticket to the Movies.</p>
+
+
+
+                  </div>
+
+
+
+                </div>
+                
+                </div>
+                
+             </footer>
+            
+
+</body>
+
+</html>

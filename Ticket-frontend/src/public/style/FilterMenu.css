@@ -1,0 +1,324 @@
+.menuFilter {
+    font-family: 'Dosis',Fallback, sans-serif;
+    font-weight: 300;
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #2087c5;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.menuFilterMain {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.menuFilterTop {
+    left: 0;
+    background: #C6DBF0;
+    z-index: 97;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.filterTitle h3 {
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #666;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#filterSearch {
+    width: 180px;
+    height: 46px;
+    margin: auto;
+    display: block;
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    background: url(../../Images/searchButton.png) no-repeat;
+    border: none;
+    color: #ffffff;
+    overflow: hidden;
+    outline: none;
+}
+
+    #filterSearch:hover {
+        background: url(../../Images/searchButtonSelected.png) no-repeat;
+        border: none;
+        color: #ffffff;
+        overflow: hidden;
+        outline: none;
+    }
+
+.filterSearch a {
+    color: #888;
+    text-decoration: none;
+    display: block;
+}
+
+    .filterSearch a:hover {
+        color: #000;
+    }
+
+.filterReset {
+    border-radius: 50%;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.menuFilterCenter {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.searchClass {
+    border-radius: 5px;
+    height: 31px;
+    width: 205px;
+}
+
+.menuFilterCenter ul {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+
+
+.leftMargin {
+    margin-left: 20px;
+}
+
+#toggleButtons button {
+    font-size: 1.05em;
+}
+
+.datetimepicker {
+    width: 250px !important;
+}
+
+.dateFilterLabel {
+    width: 40px;
+}
+
+.notValidDateFilterInput {
+   border: 1px solid red !important;
+}
+
+.dateContainer .btn-default:enabled {
+    font-weight: 800 !important;
+}
+
+.datepicker-btn {
+    height: 34px;
+}
+
+.hideFilters {
+    width: 0;
+    display: none;
+}
+
+.filterButton {
+    background-color: #2688C3;
+    border-color: #2688C3;
+}
+
+#dateBeforeInvoice, #dateBeforeMission, #dateAfterInvoice, #dateAfterMission {
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+#divRow {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+#dropdown, .filter-dropDown {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.valueOperator {
+    width: 50% !important;
+}
+
+.valueInCurrencyInput {
+    width: 50% !important;
+    margin-left: 5px;
+}
+
+.inlineFlex {
+    display: inline-flex;
+    padding-right: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.labelContainer {
+    display: flex;
+    margin: auto;
+    width: 40px;
+}
+
+.flex .input-group {
+    width: 100%;
+}
+
+#dateBeforeDropdown i, #dateAfterDropdown i, .filterButtons i {
+    margin: 0;
+}
+
+.filterButtons {
+    margin-bottom: 10px;
+}
+
+.legendStyle {
+    width: 3%;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 60px;
+}
+
+.fieldsetStyle {
+    padding-left: 10px;
+    border: 1px solid silver;
+    border-radius: 20px;
+}
+
+.paddingFieldset {
+    padding-bottom: 10px;
+}
+
+.filter-main-div .input-group-addon {
+    width: 40px;
+}
+
+.dateField {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 100;
+}
+
+.navbar-btn {
+    background-color: #2b88c3;
+    color: #fff;
+}
+
+.btnStyle {
+    height: 33.99px;
+    width: 33.33% !important;
+    text-align: center;
+}
+
+#verticale {
+    vertical-align: top;
+}
+
+.showFilter {
+    display: block !important;
+}
+
+.dateContainer {
+    width: 100%;
+}
+
+.paddingAfterDiv {
+    padding-top: 10px;
+}
+
+.paddingBeforeDiv {
+    padding-bottom: 10px;
+}
+
+.paddingInput {
+    padding-right: 30px;
+}
+
+.divBlock {
+    display: block;
+}
+
+.paddingDivInvoice {
+    padding-top: 20px;
+}
+
+.paddingDivMission {
+    padding-top: 10px;
+}
+
+.divMargin {
+    margin-left: 40px;
+}
+
+.selectedState, .selectedState:focus {
+    color: #404040;
+    background-color: #F5F5F5;
+    background: #F5F5F5;
+}
+
+.filterAlert {
+    padding-left: 10px;
+    border: 2px solid #1AAB2A;
+    border-radius: 20px;
+}
+
+.filter-container .newLine {
+    margin-bottom: 10px;
+}
+
+.filter-container .noPadding {
+    padding: 0;
+}
+
+.filter-container .paddingRight {
+    padding: 0 0 0 3px;
+}
+
+.filter-container .paddingLeft {
+    padding: 0 0 3px 0;
+}
+
+.filter-container .paddingTop{
+    padding: 4px 0 0 0 ;
+}
+.filter-container textarea {
+    height: 40px;
+    max-width: 100%;
+}
+
+.missionShortId-filter {
+    margin-top: 10px;
+}
+
+.missionAccounting-filter {
+    margin-bottom: 10px;
+}

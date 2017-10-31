@@ -1,0 +1,150 @@
+<div class="container" >
+        <div class="row" >
+                
+        <div class="col-md-12 text-left">
+                <div class="page-header">
+                    <h3>
+                      
+                        <span><i class="fa fa-film"></i>Liste des films</span>
+                    </h3>
+                    <p style="color:rgb(38, 136, 195);font-size: 20px;font-weight: bold;"  ng-repeat="item in transaction track by $index" ng-show="$last"> Balance: <span  >{{item.newbalance}}</span> DT</p> 
+                    
+                </div>
+        </div>
+            
+     </div>
+     <div class="row" >
+            <div class="col-md-12 text-left" >
+                  
+                   <button type="button" class="btn button  btn-lg" data-toggle="modal" data-target="#addMovieModal" >
+                          <span class="glyphicon glyphicon-plus-sign " aria-hidden="true"></span>
+                          Film<span ></span>
+                   </button>       
+          </div> 
+
+    </div>
+    
+    <!-- Modal -->
+<div id="addMovieModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                    <i class="fa fa-film" ></i>Nouveau Film
+                    </h4>              
+            </div>
+            <form name="addMovieform" >
+                    <div class="modal-body">
+                           <div class="row">
+                                   <div class="col-md-6 classWithPad">
+                                   <div class="form-group" >
+                                           <label>
+                                               <b class="titleText"> Titre </b>
+                                            </label>
+                                            <input type="text" name="title" class="form-control" ng-model="movie.title" required>
+                                            <input type="text" name="actors" class="form-control" ng-model="movie.actors" style="display:none;">
+                                            <input type="text" name="poster" class="form-control" ng-model="movie.poster" style="display:none;">
+                                            
+                                   </div>
+                                   </div>                                  
+           
+                               
+                              </div>  
+                            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                    <button type="button" type="submit" class="btn button" ng-click="saveMovie(movie)"  data-dismiss="modal" >Confirmer</button>            </div>
+          </div>
+      
+        </div>
+      </div>
+
+                <!-- movies table-->
+
+    <div class="row">
+
+            <table class="table">
+                    <thead class="invoices titles">
+                            <tr>
+                                    <th class="text-center">
+                                         <i class="fa fa-refresh fa-lg refresh-button" aria-hidden="true"  uib-tooltip="Rafraîchir les dépenses" tool="" tooltip-placement="bottom"></i>
+                                   
+                                    </th>
+                                   
+                                    <th class="invoices title text-center">
+                                            <span>
+                                                Titre
+                                                <i class="fa fa-sort">
+                                                </i>
+                                            </span>
+                                     </th>
+                                     
+                                     <th class="invoices title text-center">
+                                            <span>
+                                                Actors
+                                               
+                                            </span>
+                                     </th>
+                                     <th class="invoices title text-center">
+                                            <span>
+                                                Date d'ajout
+                                                <i class="fa fa-sort">
+                                                </i>
+                                            </span>
+                                     </th>
+                                     <th class="invoices title text-center">
+                                            <span>
+                                                Poster
+                                               
+                                            </span>
+                                     </th>
+                                     <th class="invoices title text-center">
+                                            <span>
+                                                Actions
+                                                <i class="fa ">
+                                                </i>
+                                            </span>
+                                     </th>
+                                     </tr>
+                   </thead>
+                   <tbody ng-repeat="movie in movies"  >
+                       <td style="display:none;" >{{movie._id}}</td>
+                    <td></td>
+                    
+                    <td >{{movie.title}}</td>
+                    <td >{{movie.actors}}</td>
+                    <td >{{movie.Created_date.slice(0,10)}}</td>
+                    <td><img ng-src="{{movie.poster}}" style="width:100px;height:100px;"/></td>
+                    
+                    <td class="invoice-action-td">
+                            <div class="flex">
+                                <button type="button" class="btn btn-primary"aria-hidden="true"><i class="fa fa-lg fa-pencil" ></i></button>
+                                <button type="button" class="btn btn-danger"aria-hidden="true" ng-click="deleteMovie(movie)"><i class="fa fa-times" ></i></button>
+                                
+                            </div>
+                        </td>
+                    
+                    
+                    
+            
+            
+            
+                   </tbody>
+            
+            
+            </table>
+
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
