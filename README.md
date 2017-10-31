@@ -8,8 +8,7 @@ Building app to get to manage cinema ticket booking
 * Angularjs
 * Nodejs
 * Express
-* nodemon
-* web
+
 
 ## Requirements
 
